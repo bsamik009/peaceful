@@ -1,0 +1,53 @@
+body {
+    text-align: center;
+    background-image: url(taliban.jpg);
+
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+h1 {
+    font-size: 40px;
+    margin-top: 20vh;
+}
+
+button {
+    font-size: 20px;
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 10px white;
+}
+
+.explosion {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background-color: orange;
+    border-radius: 50%;
+    animation: explode 0.8s ease-out forwards;
+}
+
+.shockwave {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    background-color: rgba(133, 56, 56, 0.5);
+    border-radius: 50%;
+    animation: shockwave 2s ease-out forwards;
+}
+
+@keyframes explode {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(15); opacity: 0; }
+}
+
+@keyframes shockwave {
+    0% { transform: scale(1); opacity: 1; }
+    100% { transform: scale(30); opacity: 0; }
+}
